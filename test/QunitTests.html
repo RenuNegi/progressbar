@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Tests for app.js</title>
+    <link href="..\node_modules\qunitjs\qunit\qunit.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="..\node_modules\qunitjs\qunit\qunit.js"></script>
+    <script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
+    <script src="..\src\js\app.js"></script>
+    <script>
+        QUnit.test("app.js", function (assert) {
+            assert.equal(getBarProperty("a","b"), "ab");
+        });
+
+    </script>
+</head>
+<body>
+    <div id="qunit"></div>
+    <div class="mainContainer">
+        <h1>Progress Bars Demo Test</h1>
+        <section id="app"></section>
+    </div>
+    <script type="text/ractive" id="template"></script>
+</body>
+</html>

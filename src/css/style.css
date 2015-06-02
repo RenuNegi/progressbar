@@ -1,0 +1,36 @@
+ button.control {
+            margin-left: 5px;
+        }
+
+        .mainContainer {
+            width: 50%;
+            margin: auto;
+        }
+
+        .progressBarContainer {
+            border: 1px solid #eee;
+            position: relative;
+            overflow: hidden;
+            margin-top: 10px;
+            height: 40px;
+        }
+
+        .progressLabel {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            font-weight: bold;
+        }
+
+        .progressBar {
+            display: inline-block;
+            height: 40px;
+            -moz-transition: width 0.5s;
+            -o-transition: width 0.5s;
+            -webkit-transition: width 0.5s;
+            transition: width 0.5s;
+        }
+
+        .controlContainer {
+            margin-top: 10px;
+        }

@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<html lang='en-GB'>
+<head>
+    <meta charset='utf-8'>
+    <title>Progress Bars Demo</title>
+
+    <link rel="stylesheet" type="text/css" href="build/css/style.min.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <h1>Progress Bars Demo</h1>
+        <section id="app"></section>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
+    <script type="text/ractive" id="template">
+        <div id="progress1" class="progressBarContainer">
+            <span class="progressLabel">{{width1}}%</span>
+            <span class="progressBar" style="width:{{width1}}%; background-color:{{color1}};">
+                &nbsp;
+            </span>
+        </div>
+
+        <div id="progress2" class="progressBarContainer">
+            <span class="progressLabel">{{width2}}%</span>
+            <span class="progressBar" style="width:{{width2}}%; background-color:{{color2}};">
+                &nbsp;
+            </span>
+        </div>
+
+        <div id="progress3" class="progressBarContainer">
+            <span class="progressLabel">{{width3}}%</span>
+            <span class="progressBar" style="width:{{width3}}%; background-color:{{color3}};">
+                &nbsp;
+            </span>
+        </div>
+        <div class="controlContainer">
+            <select id="progressSelector">
+                <option value="1">#progress1</option>
+                <option value="2">#progress2</option>
+                <option value="3">#progress3</option>
+            </select>
+
+            <button class="control" data-value="-25">-25</button>
+            <button class="control" data-value="-10">-10</button>
+            <button class="control" data-value="+10">+10</button>
+            <button class="control" data-value="+25">+25</button>
+        </div>
+    </script>
+    <script type="text/javascript" src="build/js/app.min.js"></script>
+    </body>
+    </html>
